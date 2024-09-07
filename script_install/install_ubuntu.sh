@@ -1,16 +1,16 @@
-#INSTALANDO O GLPI NO UBUNTU 22.04.4 LTS
-
 # 1. Pré-Requisitos
 
-####################################################################
+##################################################################
+
 # 1.1. Certifique-se de que o servidor Ubuntu 22.04 LTS esteja instalado.
 # 1.2. É necessário ter acesso à internet para baixar e instalar os pacotes necessários.
 # 1.3. Verifique se você tem privilégios de root ou sudo no servidor.
-####################################################################
+
+##################################################################
 
 # 2. Instalação
 
-####################################################################
+##################################################################
 # 2.1. Atualize o sistema e todos os pacotes instalados para a versão mais recente.
 sudo apt update && sudo apt dist-upgrade -y
 
@@ -57,7 +57,7 @@ sudo a2dissite 000-default.conf
 
 # 2.8. Configure o PHP para garantir que os cookies sejam acessíveis apenas via HTTP e defina o timezone correto no arquivo php.ini.
 sudo sed -i 's/^session.cookie_httponly =/session.cookie_httponly = on/' /etc/php/8.1/apache2/php.ini && \
-sudo sed -i 's/^;date.timezone =/date.timezone = America\/Sao_Paulo/' /etc/php/8.1/apache2/php.ini
+	sudo sed -i 's/^;date.timezone =/date.timezone = America\/Sao_Paulo/' /etc/php/8.1/apache2/php.ini
 
 # NOTA: Se houver um erro, verifique a versão do PHP. Para localizar o arquivo php.ini, execute o comando abaixo:
 sudo find /etc/php -type f -name "php.ini"
@@ -107,11 +107,11 @@ sudo php /var/www/glpi/bin/console db:install \
 	--db-user=glpi \
 	--db-password=P4ssw0rd
 
-####################################################################
+##################################################################
 
 # 3. Ajustes de Segurança
 
-####################################################################
+##################################################################
 # 3.1. Após a instalação, remova o arquivo de instalação para evitar que o GLPI seja reinstalado acidentalmente.
 sudo rm /var/www/glpi/install/install.php
 
@@ -136,15 +136,15 @@ define('GLPI_VAR_DIR', '/var/lib/glpi');
 define('GLPI_LOG_DIR', '/var/log/glpi');
 EOF
 
-####################################################################
+##################################################################
 
 # 4. Primeiros Passos
 
-####################################################################
+##################################################################
 # 4.1. Acesse a interface web do GLPI para finalizar a configuração através do navegador.
 # 4.2. Crie um novo usuário com perfil de super-administrador.
 # 4.3. Exclua os usuários padrão (glpi, normal, post-only, tech) por questões de segurança.
 # 4.3.1. Envie os usuários excluídos para a lixeira.
 # 4.3.2. Remova os usuários permanentemente da lixeira.
 # 4.3.4. Defina a URL de acesso ao sistema na interface administrativa em: Configurar -> Geral -> Configuração Geral -> URL da aplicação.
-####################################################################
+##################################################################
