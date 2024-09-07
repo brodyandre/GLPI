@@ -8,7 +8,7 @@ Este repositório contém um guia passo a passo para instalar e configurar o GLP
 -----------------------------------------------------------------------------------------------------------------------------------------
 Pré-Requisitos
 
-Servidor Ubuntu 22.04 LTS
+Servidor Ubuntu 22.04.04 LTS
 Acesso root ou sudo
 Conexão à internet
 Etapas de Instalação
