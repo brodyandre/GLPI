@@ -1,6 +1,6 @@
-INSTALANDO O GLPI NO UBUNTU 22.04.4 LTS
+#INSTALANDO O GLPI NO UBUNTU 22.04.4 LTS
 
-1. Pré-Requisitos
+# 1. Pré-Requisitos
 
 ####################################################################
 # 1.1. Certifique-se de que o servidor Ubuntu 22.04 LTS esteja instalado.
@@ -8,7 +8,7 @@ INSTALANDO O GLPI NO UBUNTU 22.04.4 LTS
 # 1.3. Verifique se você tem privilégios de root ou sudo no servidor.
 ####################################################################
 
-2. Instalação
+# 2. Instalação
 
 ####################################################################
 # 2.1. Atualize o sistema e todos os pacotes instalados para a versão mais recente.
@@ -109,7 +109,7 @@ sudo php /var/www/glpi/bin/console db:install \
 
 ####################################################################
 
-3. Ajustes de Segurança
+# 3. Ajustes de Segurança
 
 ####################################################################
 # 3.1. Após a instalação, remova o arquivo de instalação para evitar que o GLPI seja reinstalado acidentalmente.
@@ -138,7 +138,7 @@ EOF
 
 ####################################################################
 
-4. Primeiros Passos
+# 4. Primeiros Passos
 
 ####################################################################
 # 4.1. Acesse a interface web do GLPI para finalizar a configuração através do navegador.
