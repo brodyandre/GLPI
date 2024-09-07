@@ -1,12 +1,12 @@
 #!/bin/bash
 
 ####################################################################
-# Citra IT - Excelência em TI
-# Procedimento: INSTALAÇÃO GLPI
-# @Responsável: luciano@citrait.com.br
-# @Data: 23/09/2023 Versão: 1.1 update versão glpi
-# @Data: 13/06/2023 Versão: 1.0 inicial
-# @Homologado: Ubuntu 22.04
+# brodyandre - Data Engineer
+# Atividade: INSTALAÇÃO GLPI
+# @Responsável: landresouza36@gmail.com
+# @Data: 07/09/2024 Versão: 1.1 update glpi version
+# @Data: 05/09/2024 Versão: 1.0 initial version
+# @Homologado: Ubuntu 22.04.4 LTS
 ####################################################################
 
 ####################################################################
